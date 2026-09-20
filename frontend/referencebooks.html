@@ -3,10 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./referencebooks.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>参考書図鑑</h1>
-    <button onclick="location.href='./referencepart/part1.html'">早慶</button>
+    <header class="header">
+    <div class="header-div">
+    <img class="header-img" src="./referenceimg/kizuki.svg">
+    <h1 class="header-title">参考書図鑑</h1>
+    </div>
+   
+    <nav class="nav">
+        
+        <input id="search" placeholder="参考書名" class="search">
+        <button id="button" class="button">検索</button>
+        <p>ソート</p>
+        <select class="Sort" id="Sort">
+        <option value="0"></option>
+        <option class="booksort" value="1">関正生</option>
+        <option class="booksort" ></option>
+        <option class="booksort"></option>
+        <option class="booksort"></option>
+        <option class="booksort"></option>
+        <option class="booksort"></option>
+    </select>
+    </nav>
+
+</header>
+
+<main>
+    <section class="visual1 splide" aria-label="Splideの基本的なHTML">
+        <div class="splide__track">
+		<div class="splide__list">
+			<div class="splide__slide">
+                <div class="slider-1">
+                    <div class="slider-box-1">
+                       <div class="box1">
+                        <div><img src="./referenceimg/polaris1Englishgrammer_.jpg" class="box-img1"></div>
+                        <div class="div-reference-text-main">
+                        <p>NO.001</p>
+                        <h2>英文法POLARIS１</h2>
+                        <h5>英文法</h5>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+			<div class="splide__slide">
+                 <div class="slider-1">
+                    <div class="slider-box-1">
+                       <div class="box1">
+                        <div><img src="./referenceimg/first.jpg" class="box-img1"></div>
+                        <div class="div-reference-text-main">
+                        <p>NO.001</p>
+                        <h2>英文法POLARIS１</h2>
+                        <h5>英文法</h5>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+			<div class="splide__slide">
+                <div class="slider-1">
+                    <div class="slider-box-1">
+                       <div class="box1">
+                        <div><img src="./referenceimg/first.jpg" class="box-img1"></div>
+                        <div class="div-reference-text-main">
+                        <p>NO.001</p>
+                        <h2>英文法POLARIS１</h2>
+                        <h5>英文法</h5>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+  </div>
+    </section>
+    <section class="visual2">
+        <div class="reference">
+            <div class="reference-part">
+            <a href="./referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./referenceimg/goiwa.jpg"></a>
+            <p class="reference-name">＜読解の原点＞</p>
+            </div>
+              <div class="reference-part">
+            <a href="./referencepart/referencepart3.html" class="reference-url"><img class="reference-img" src="./referenceimg/first.jpg"></a>
+            <p class="reference-name">＜ひとつひとつ<br>わかりやすく＞</p>
+            </div>
+             <div class="reference-part" data-author="関正生">
+            <a href="./referencepart/referencepart4.html" class="reference-url"><img class="reference-img" src="./referenceimg/gpalaris.jpg"></a>
+            <p class="reference-name">＜英文法POLARIS0＞</p>
+            </div>
+             <div class="reference-part" data-author="関正生">
+            <a href="./referencepart/referencepart2.html" class="reference-url"><img class="reference-img" src="./referenceimg/polaris1Englishgrammer_.jpg"></a>
+            <p class="reference-name">＜英文法POLARIS1＞</p>
+            </div>
+             <div class="reference-part" data-author="関正生">
+            <a href="./referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./referenceimg/gpolaris02.jpg"></a>
+            <p class="reference-name">＜英文法POLARIS2＞</p>
+            </div>
+             <div class="reference-part" data-author="関正生">
+            <a href="./referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./referenceimg/gpolaris03.jpg"></a>
+            <p class="reference-name">＜英文法POLARIS3＞</p>
+            </div>
+             <div class="reference-part">
+            <a href="./referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./referenceimg/vintage.jpg"></a>
+            <p class="reference-name">＜vintage＞</p>
+            </div>
+             <div class="reference-part">
+            <a href="./referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./referenceimg/nextstage.jpg"></a>
+            <p class="reference-name">＜読解の原点＞</p>
+            </div>
+             <div class="reference-part">
+            <a href="./referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./referenceimg/g1000.jpg"></a>
+            <p class="reference-name">＜読解の原点＞</p>
+            </div>
+            <div class="reference-part">
+            <a href="./referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./referenceimg/ghizii.jpg"></a>
+            <p class="reference-name">＜読解の原点＞</p>
+            </div>
+           
+        </div>
+    </section>
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

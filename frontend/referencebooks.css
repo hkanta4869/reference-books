@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+}
+/*ヘッダー
+*/
+.header{
+ display: flex;
+ height: 80px;
+ background-color: #ffffff;
+ justify-content: space-between;
+ align-items: center;
+ box-shadow: 2px 4px 4px gray;
+}
+.header-title{
+    margin: 0;
+
+}
+.header-div{
+ margin-left: 20px;
+ display: flex;
+ justify-content: center;
+}
+.header-img{
+    margin-top: 7px;
+    height: 35px;
+    margin-right: 20px;
+}
+.nav{
+       width:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+.Sort{
+    height:20px;
+    width:100px;
+    margin-right: 0;
+}
+
+.visual1{
+    height: 400px;
+}
+/*
+スライダー
+*/
+.splide__track{
+    height:400px;
+
+  
+}
+.splide__slide{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.splide__slide img{
+    width: 100px;
+    height:auto;
+}
+.slider-1{
+    display: flex;
+    justify-content: center;
+    width:1000px
+}
+
+.slider-box-1{
+  width:800px;
+  height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    width:700px;
+    height:300px;
+    background-color: #dbdbdbd0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transform: rotate(-5deg);
+   border-radius: 10px;
+}
+
+.splide__slide img{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width:150px;
+    height:auto;
+    transform: rotate(5deg);
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+.div-reference-text-main{
+    margin-top: 20px;
+    border:1.5px solid #808080;
+    width:400px;
+    height: 200px;
+    background-color:#ffffff;
+    box-shadow: 5px 5px #d3d3d3;
+     transform: rotate(5deg);
+     padding-left: 10px;
+};
+
+.visual2{
+    height: 2000px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.reference{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.reference-url{
+    display: flex;
+    justify-content: center;
+}
+.reference-img{
+    width:100px;
+    height:auto;
+    border: 1px solid gray;
+}
+.reference-img{
+   transition-duration: .4s;
+}
+.reference-img:hover{
+    transform: scale(1.1);
+     box-shadow: 0px 0px 8px #676767;
+}
+
+.reference-part{
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+.reference-name{
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.reference-part.hidden{
+    display: none !important;
+
+}
+
