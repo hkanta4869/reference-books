@@ -1,201 +1,232 @@
+
 body{
     margin: 0;
 }
-/*ヘッダー
-*/
+
+/* =========================
+   ヘッダー
+   ========================= */
+
 .header{
- display: flex;
- height: 80px;
- background-color: #ffffff;
- justify-content: space-between;
- align-items: center;
- box-shadow: 2px 4px 4px gray;
+    display: flex;
+    height: 80px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 4px 4px gray;
 }
+
 .header-title{
     margin: 0;
+}
 
-}
 .header-div{
- margin-left: 20px;
- display: flex;
- justify-content: center;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
 }
+
 .header-img{
     margin-top: 7px;
     height: 35px;
     margin-right: 20px;
 }
+
 .header-hum{
-  position: absolute;
-  right: 0;
-  left: 50%;
-  top: 0;
-  width: 50%;
-  height: 100vh;
-  top:-100%;
-  background-color: #fff; /**/
-  transition: ease .4s; 
-  z-index: 999;
-  opacity: 0.9;
+    position: absolute;
+    right: 0;
+    left: 50%;
+    top: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    transition: ease .4s;
+    z-index: 999;
+    opacity: 0.9;
 }
+
 .header-hum.active{
     transform: translateY(100%);
 }
+
 .hamburger-button{
-    width:48px;
+    width: 48px;
     height: 100%;
-    background-color: transparent; 
-    border-color: transparent; 
+    background-color: transparent;
+    border-color: transparent;
     z-index: 9999;
 }
+
 .hamburger-button span{
-  width:100%;
-  height:1px;
-  background-color: #000;
-  position: relative;
-  transition:ease .4s;
-  display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: relative;
+    transition: ease .4s;
+    display: block;
 }
+
 .hamburger-button span:nth-child(1){
-    top:0;
-    
+    top: 0;
 }
+
 .hamburger-button span:nth-child(2){
-    margin:8px 0;
+    margin: 8px 0;
 }
+
 .hamburger-button span:nth-child(3){
-    top:0px;
+    top: 0;
 }
+
 .hamburger-button.active{
     transform: translateX(0);
 }
+
 .hamburger-button.active span:nth-child(1){
-  top: 5px;
-  transform: rotate(45deg);
+    top: 5px;
+    transform: rotate(45deg);
 }
+
 .hamburger-button.active span:nth-child(2){
     opacity: 0;
 }
+
 .hamburger-button.active span:nth-child(3){
-    top:-13px;
+    top: -13px;
     transform: rotate(-45deg);
 }
+
 .nav{
     height: 100%;
-    width:500px;
+    width: 500px;
     display: flex;
     flex-direction: column;
-   
 }
+
 .search-box{
     margin-right: 50px;
 }
+
 .author-filter{
     display: flex;
-  
     align-items: center;
 }
+
 .button{
     width: 50px;
     height: 20px;
     text-align: center;
     font-size: 10px;
 }
+
 .Sort{
-    height:20px;
-    width:100px;
+    height: 20px;
+    width: 100px;
     margin-right: 0;
 }
+
+
+/* =========================
+   スライダー
+   ========================= */
 
 .visual1{
     height: 400px;
 }
-/*
-スライダー
-*/
-.splide__track{
-    height:400px;
 
-  
+.splide__track{
+    height: 400px;
 }
+
 .splide__slide{
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .splide__slide img{
     width: 100px;
-    height:auto;
+    height: auto;
 }
+
 .slider-1{
     display: flex;
     justify-content: center;
-    width:1000px
+    width: 1000px;
 }
 
 .slider-box-1{
-  width:800px;
-  height:400px;
+    width: 800px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .box1{
-    width:700px;
-    height:300px;
+    width: 700px;
+    height: 300px;
     background-color: #dbdbdbd0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   transform: rotate(-5deg);
-   border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-5deg);
+    border-radius: 10px;
 }
 
 .splide__slide img{
     border: 1px solid gray;
     border-radius: 10px;
-    width:150px;
-    height:auto;
+    width: 150px;
+    height: auto;
     transform: rotate(5deg);
     margin-bottom: 30px;
     margin-right: 20px;
 }
+
 .div-reference-text-main{
     margin-top: 20px;
-    border:1.5px solid #808080;
-    width:400px;
+    border: 1.5px solid #808080;
+    width: 400px;
     height: 200px;
-    background-color:#ffffff;
+    background-color: #ffffff;
     box-shadow: 5px 5px #d3d3d3;
-     transform: rotate(5deg);
-     padding-left: 10px;
-};
+    transform: rotate(5deg);
+    padding-left: 10px;
+}
+
+
+/* =========================
+   参考書一覧
+   ========================= */
 
 .visual2{
     height: 2000px;
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .reference{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .reference-url{
     display: flex;
     justify-content: center;
 }
+
 .reference-img{
-    width:100px;
-    height:auto;
+    width: 100px;
+    height: auto;
     border: 1px solid gray;
+    transition-duration: .4s;
 }
-.reference-img{
-   transition-duration: .4s;
-}
+
 .reference-img:hover{
     transform: scale(1.1);
-     box-shadow: 0px 0px 8px #676767;
+    box-shadow: 0px 0px 8px #676767;
 }
 
 .reference-part{
@@ -203,16 +234,235 @@ body{
     height: 200px;
     display: flex;
     flex-direction: column;
-
 }
+
 .reference-name{
     text-align: center;
     font-size: 12px;
 }
 
 
+/* =========================
+   検索・フィルター用
+   ========================= */
+
 .reference-part.hidden{
     display: none !important;
+}
+
+
+/* ==================================================
+   スマートフォン
+   600px以下
+   ================================================== */
+
+@media screen and (max-width: 600px){
+
+    /* =========================
+       ヘッダー
+       ========================= */
+
+    .header{
+        height: 60px;
+    }
+
+    .header-div{
+        margin-left: 12px;
+    }
+
+    .header-img{
+        height: 28px;
+        margin-right: 10px;
+    }
+
+    .header-title{
+        font-size: 20px;
+    }
+
+    .hamburger-button{
+        width: 45px;
+        height: 60px;
+    }
+
+
+    /* =========================
+       ハンバーガーメニュー
+       ========================= */
+
+    .header-hum{
+        left: 20%;
+        width: 80%;
+        height: 100vh;
+    }
+
+    .nav{
+        width: 100%;
+        height: 100%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       検索
+       ========================= */
+
+    .search-box{
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    .search{
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .button{
+        width: 55px;
+        height: 30px;
+        flex-shrink: 0;
+    }
+
+
+    /* =========================
+       著者フィルター
+       ========================= */
+
+    .author-filter{
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    .author-filter p{
+        margin-right: 10px;
+    }
+
+    .Sort{
+        width: 150px;
+        height: 32px;
+    }
+
+
+    /* =========================
+       レベルフィルター
+       ========================= */
+
+    #level-filter{
+        width: 150px;
+        height: 32px;
+        margin-top: 15px;
+    }
+
+    #reset{
+        height: 32px;
+        margin-top: 15px;
+    }
+
+
+    /* =========================
+       スライダー
+       ========================= */
+
+    .visual1{
+        height: 300px;
+    }
+
+    .splide__track{
+        height: 300px;
+    }
+
+    .splide__slide{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider-1{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider-box-1{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box1{
+        width: 90%;
+        height: 220px;
+        max-width: 500px;
+    }
+
+    .splide__slide img{
+        width: 90px;
+        height: auto;
+        margin-right: 8px;
+        margin-bottom: 20px;
+    }
+
+    .div-reference-text-main{
+        width: 45%;
+        max-width: 220px;
+        height: 140px;
+        padding-left: 8px;
+    }
+
+    .div-reference-text-main h2{
+        font-size: 16px;
+    }
+
+    .div-reference-text-main h5{
+        font-size: 12px;
+    }
+
+    .div-reference-text-main p{
+        font-size: 11px;
+    }
+
+
+    /* =========================
+       参考書一覧
+       ========================= */
+
+    .visual2{
+        height: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .reference{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .reference-part{
+        width: 120px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reference-img{
+        width: 85px;
+        height: auto;
+    }
+
+    .reference-name{
+        font-size: 11px;
+        line-height: 1.5;
+        margin-top: 8px;
+    }
 
 }
 
