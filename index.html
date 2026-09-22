@@ -13,22 +13,41 @@
     <img class="header-img" src="./frontend/referenceimg/kizuki.svg">
     <h1 class="header-title">参考書図鑑</h1>
     </div>
-   
+    <div class="header-hum" id="hamburger">
     <nav class="nav">
-        
+        <div class="search-box">
         <input id="search" placeholder="参考書名" class="search">
         <button id="button" class="button">検索</button>
-        <p>ソート</p>
+        </div>
+        <div class="author-filter">
+        <p>著者フィルター</p>
         <select class="Sort" id="Sort">
-        <option value="0"></option>
+        <option value=""></option>
         <option class="booksort" value="1">関正生</option>
         <option class="booksort" ></option>
         <option class="booksort"></option>
         <option class="booksort"></option>
         <option class="booksort"></option>
         <option class="booksort"></option>
-    </select>
+        </select>
+        </div>
+        <div>
+        <select id="level-filter">
+            <option value="0"></option>
+            <option value="1">基礎</option>
+            <option value="0"></option>
+            <option value="3">発展</option>
+            <option value="0"></option>
+        </select>
+        <button id="reset">リセット</button>
+        </div>
     </nav>
+    </div>
+    <button class="hamburger-button" id="hamburger-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
 </header>
 
@@ -85,9 +104,9 @@
         <div class="reference">
             <div class="reference-part">
             <a href=".referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/goiwa.jpg"></a>
-            <p class="reference-name">＜読解の原点＞</p>
+            <p class="reference-name">＜いちばんはじめの<br>英文法＞</p>
             </div>
-              <div class="reference-part">
+              <div class="reference-part" data-level="基礎">
             <a href="./referencepart/referencepart3.html" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/first.jpg"></a>
             <p class="reference-name">＜ひとつひとつ<br>わかりやすく＞</p>
             </div>
@@ -103,7 +122,7 @@
             <a href="./referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/gpolaris02.jpg"></a>
             <p class="reference-name">＜英文法POLARIS2＞</p>
             </div>
-             <div class="reference-part" data-author="関正生">
+             <div class="reference-part" data-author="関正生" data-level="発展">
             <a href="./referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/gpolaris03.jpg"></a>
             <p class="reference-name">＜英文法POLARIS3＞</p>
             </div>
