@@ -17,7 +17,7 @@ const searchInput = document.getElementById("search");
  const parts = document.querySelectorAll(".reference-part");
 
 btn.onclick = function () {
-    const search = searchInput.value;
+    const search = searchInput.value ;
 
    
 
@@ -30,6 +30,7 @@ btn.onclick = function () {
             part.classList.add("hidden")
         }
     });
+    hamreset();
 };
 //著者フィルター
 const author = document.getElementById("Sort")
@@ -81,8 +82,14 @@ if(selectValue1 === "3"){
     }
   })
 }
+hamreset();
+levelReset();
 })
 
+function levelReset(){
+  const levelreset = document.getElementById("level-filter")
+  levelreset.value = '';
+}
 
 //検索結果リセット
 const resetbutton = document.getElementById("reset");
