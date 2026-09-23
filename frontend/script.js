@@ -93,15 +93,50 @@ function levelReset(){
 
 //検索結果リセット
 const resetbutton = document.getElementById("reset");
-resetbutton.addEventListener('click',(e)=>{
+resetbutton.addEventListener('click',()=>{
    parts.forEach((part)=>{
     part.classList.remove("hidden")
    })
+  sortreset();
   hamreset();
 })
 
 
+//各reference-partを配列に格納
+const partLists = Array.from(parts)
+console.log(partLists)
+//難易度ソート
+const levelSortbutton =document.getElementById("level-sort")
+const reference = document.querySelector(".reference")
+levelSortbutton.addEventListener('click',()=>{
+  const sortedparts = [...partLists].sort(compare);
+  sortedparts.forEach((part) =>{
+    reference.appendChild(part);
+    hamreset();
 
+  })
+})
+
+//ソート用関数
+function compare (a,b){
+
+ const compareA = a.dataset.sortlevel;
+ const compareB = b.dataset.sortlevel;
+ if(compareA < compareB){
+  return -1;
+ }
+ if(compareA > compareB){
+  return 1;
+ }
+ return 0;
+}
+
+//ソートリセット
+function sortreset (){
+  partLists.forEach((part) =>{
+  reference.appendChild(part);
+ })
+ }
 
 //ハンバーガーメニュー
 const ham = document.getElementById("hamburger");
