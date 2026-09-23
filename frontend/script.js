@@ -35,7 +35,6 @@ btn.onclick = function () {
 //著者フィルター
 const author = document.getElementById("Sort")
 author.addEventListener('change', (e) => {
- 
   const selectValue  = e.target.value;
   if(selectValue === "1"){
     parts.forEach((part) => { 
@@ -45,17 +44,58 @@ author.addEventListener('change', (e) => {
             part.classList.add("hidden")
         }
       });
-      hamreset();
-      authorreset();
   }
-
+  if(selectValue === "2"){
+    parts.forEach((part)=>{
+      if(part.dataset.author === "Zkai"){
+        part.classList.remove("hidden")
+      }else{
+        part.classList.add("hidden")
+      }
+    })
+  }
+   authorreset();
+   hamreset();
 });
 
  function authorreset(){
    const authorReset = document.getElementById("Sort");
    authorReset.value='';
  }
+
+//参考書ジャンルフィルター
+const book_kinds=  document.getElementById("book-kinds")
+book_kinds.addEventListener('change',(e)=>{
+  const selectkinds = e.target.value;
+  if(selectkinds === "1"){
+    parts.forEach((part) =>{
+      if(part.dataset.kinds === "words"){
+        part.classList.remove("hidden")
+      }else{
+        part.classList.add("hidden")
+      }
+    })
+  }
+  if(selectkinds === "2"){
+    parts.forEach((part) =>{
+      if(part.dataset.kinds === "grammar"){
+        part.classList.remove("hidden")
+      }else{
+        part.classList.add("hidden")
+      }
+    })
+  }
+
+  hamreset();
+});
+
 //難易度フィルター
+            //data-sortlevel=0
+            //data-sortlevel=1
+            //data-sortlevel=2
+            //data-sortlevel=3
+            //data-sortlevel=4
+            //data-sortlevel=5
 const level = document.getElementById("level-filter")
 level.addEventListener('change',(e)=>{
   
@@ -98,8 +138,11 @@ resetbutton.addEventListener('click',()=>{
     part.classList.remove("hidden")
    })
   sortreset();
+  authorreset();
   hamreset();
 })
+
+//絞り込み検索
 
 
 //各reference-partを配列に格納
