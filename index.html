@@ -24,7 +24,7 @@
         <select class="Sort" id="Sort">
         <option value=""></option>
         <option class="booksort" value="1">関正生</option>
-        <option class="booksort" ></option>
+        <option class="booksort" value="2">Z会</option>
         <option class="booksort"></option>
         <option class="booksort"></option>
         <option class="booksort"></option>
@@ -42,8 +42,21 @@
         </div>
         <div>
             <button id="level-sort">難易度ソート：昇順</button>
-            <button id="reset">リセット</button>
         </div>
+        <div>
+              <button id="reset">リセット</button>
+        </div>
+        <div>
+           <select id="book-kinds">
+            <option value=""></option>
+            <option value="1">単語</option>
+            <option value="2">文法</option>
+            <option value="3">読解</option>
+            <option value="4">長文</option>
+            
+           </select>
+        </div>
+        
     </nav>
     </div>
     <button class="hamburger-button" id="hamburger-button">
@@ -105,23 +118,23 @@
     </section>
     <section class="visual2">
         <div class="reference">
-            <div class="reference-part" data-sortlevel="1">
+            <div class="reference-part" data-sortlevel="1" data-kinds="grammar">
             <a href=".referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/goiwa.jpg"></a>
             <p class="reference-name">＜いちばんはじめの<br>英文法＞</p>
             </div>
-              <div class="reference-part" data-level="基礎" data-sortlevel="0">
+              <div class="reference-part" data-level="基礎" data-sortlevel="0"  data-kinds="grammar">
             <a href="./referencepart/referencepart3.html" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/first.jpg"></a>
             <p class="reference-name">＜ひとつひとつ<br>わかりやすく＞</p>
             </div>
-             <div class="reference-part" data-author="関正生" data-sortlevel="1">
+             <div class="reference-part" data-author="関正生" data-sortlevel="1"  data-kinds="grammar">
             <a href="./referencepart/referencepart4.html" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/gpalaris.jpg"></a>
             <p class="reference-name">＜英文法POLARIS0＞</p>
             </div>
-             <div class="reference-part" data-author="関正生" data-sortlevel="2">
+             <div class="reference-part" data-author="関正生" data-sortlevel="2"  data-kinds="grammar">
             <a href="./referencepart2.html" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/polaris1Englishgrammer_.jpg"></a>
             <p class="reference-name">＜英文法POLARIS1＞</p>
             </div>
-             <div class="reference-part" data-author="関正生" data-sortlevel="3">
+             <div class="reference-part" data-author="関正生" data-sortlevel="3"  data-kinds="grammar">
             <a href="./referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/gpolaris02.jpg"></a>
             <p class="reference-name">＜英文法POLARIS2＞</p>
             </div>
@@ -145,6 +158,31 @@
             <a href="./referencepart/referencepart1.html" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/ghizii.jpg"></a>
             <p class="reference-name">＜読解のための英文法＞</p>
             </div>
+            <div class="reference-part" data-sortlevel="1" data-author="関正生"  data-kinds="long-sentence">
+            <a href="" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/therules1E.jpg"></a>
+            <p class="reference-name">＜The rules 1＞</p>
+            </div>
+            <div class="reference-part" data-sortlevel="2" data-author="関正生" data-kinds="long-sentence">
+            <a href="" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/therules2E.jpg"></a>
+            <p class="reference-name">＜The rules 2＞</p>
+            </div>
+            <div class="reference-part" data-sortlevel="2" data-author="">
+            <a href="" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/Ekaisyaku70.jpg"></a>
+            <p class="reference-name">＜入門英文解釈の技術70＞</p>
+            </div>
+            <div class="reference-part" data-sortlevel="0" data-author="Zkai" data-kinds="words">
+            <a href="" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/Ewordsokudoku00.jpg"></a>
+            <p class="reference-name">＜速読英単語 中学版＞</p>
+            </div>
+            <div class="reference-part" data-sortlevel="1" data-author="Zkai" data-kinds="words">
+            <a href="" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/Ewordsokudoku1_1.jpg"></a>
+            <p class="reference-name">＜速読英単語 必修編＞</p>
+            </div>
+            <div class="reference-part" data-sortlevel="4" data-author="Zkai" data-kinds="words">
+            <a href="" class="reference-url"><img class="reference-img" src="./frontend/referenceimg/Ewordsokudoku2.jpg"></a>
+            <p class="reference-name">＜速読英単語 上級編＞</p>
+            </div>
+            
            
         </div>
     </section>
