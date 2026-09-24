@@ -10,7 +10,8 @@ new Splide('.splide',{
 //フィルター用オブジェクト
 const  authors ={
   "1": "関正生",
-  "2":"Zkai"
+  "2":"Zkai",
+  "3":"gakken"
 }
 const kinds ={
   "1":"words",
@@ -62,6 +63,15 @@ author.addEventListener('change', (e) => {
   if(selectValue === "2"){
     parts.forEach((part)=>{
       if(part.dataset.author === "Zkai"){
+        part.classList.remove("hidden")
+      }else{
+        part.classList.add("hidden")
+      }
+    })
+  }
+  if(selectValue === "3"){
+    parts.forEach((part)=>{
+      if(part.dataset.author === "gakken"){
         part.classList.remove("hidden")
       }else{
         part.classList.add("hidden")
