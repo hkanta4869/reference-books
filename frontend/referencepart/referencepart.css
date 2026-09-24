@@ -124,12 +124,14 @@
 }
 
 .discription-2{
-   margin-left: 20px;
+   margin-left: 10px;
    width: 600px;
    height: 550px;
    border:2px solid #808080;
    display: flex;
    flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
 .part-mainvisual2-1{
     height: 300px;
@@ -147,18 +149,16 @@
 /*パラメーター
 */
 .parameter-1{
-    margin-top:30px;
+    
     width:450px;
-    height:50px;
+    height:80px;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
 }
-.parameter-1 p{
-    padding-left: 10px;
-}
+
 .parameter-1-chart{
     width:350px;
     height: 50px;
@@ -197,16 +197,14 @@
 
 .parameter-2{
     width:450px;
-    height:50px;
+    height:80px;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
 }
-.parameter-2 p{
-    padding-left: 10px;
-}
+
 .parameter-2-chart{
     width:350px;
     height: 50px;
@@ -230,7 +228,7 @@
 }
 .parameter-3{
     width:450px;
-    height:50px;
+    height:80px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -238,7 +236,7 @@
     padding-left: 20px;
 }
 .parameter-3 p{
-    padding-left: 10px;
+  
 }
 .parameter-3-chart{
     width:350px;
@@ -249,7 +247,40 @@
     overflow: hidden;
 }
 .block-3{
-    width:80%;
+    width:70%;
+    height:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#03a9f4;
+    border-radius: 0 4px 4px 0;
+    animation:graphAnim 3s forwards;
+    position: absolute;
+    transform: scale(0);
+    transform-origin: left center; 
+}
+.parameter-4{
+    width:450px;
+    height:80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+.parameter-4 p{
+
+}
+.parameter-4-chart{
+    width:350px;
+    height: 50px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.block-4{
+    width:40%;
     height:20px;
     display: flex;
     justify-content: space-between;
