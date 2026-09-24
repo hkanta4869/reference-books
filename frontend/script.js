@@ -7,8 +7,22 @@ new Splide('.splide',{
     },
     
 }).mount(window.splide.Extensions);
-
-
+//フィルター用オブジェクト
+const  authors ={
+  "1": "関正生",
+  "2":"Zkai"
+}
+const kinds ={
+  "1":"words",
+  "2":"grammar",
+  "3":"dokkai",
+  "4":"long-sentence"
+}
+const levels = {
+  "1":"基礎",
+  "2":"標準",
+  "3":"発展"
+}
 
 
 //参考書検索機能
@@ -85,6 +99,15 @@ book_kinds.addEventListener('change',(e)=>{
       }
     })
   }
+  if(selectkinds === "4"){
+     parts.forEach((part) =>{
+      if(part.dataset.kinds === "long-sentence"){
+        part.classList.remove("hidden")
+      }else{
+        part.classList.add("hidden")
+      }
+    })
+  }
 
   hamreset();
 });
@@ -143,6 +166,39 @@ resetbutton.addEventListener('click',()=>{
 })
 
 //絞り込み検索
+
+
+const andsort1 = document.getElementById("andsort1")
+const andsort2 = document.getElementById("andsort2")
+const andsort3 = document.getElementById("andsort3")
+
+
+
+
+//絞り込み用のボタン
+const andbutton = document.getElementById("andsortbutton")
+andbutton.addEventListener('click',()=>{
+    const select1 = andsort1.value;
+    const select2 = andsort2.value;
+    const select3 = andsort3.value;
+
+//datasetの値を取得
+const selectedAuthors =authors[select1];
+const selectedKinds = kinds[select2];
+const selectedLevels = levels[select3];
+
+
+ 
+    parts.forEach((part)=>{
+      if(part.dataset.author === selectedAuthors &&part.dataset.kinds === selectedKinds
+        && part.dataset.level === selectedLevels){
+          part.classList.remove("hidden")
+      }else{
+        part.classList.add("hidden")
+      }
+    })
+    hamreset();
+  })
 
 
 //各reference-partを配列に格納
