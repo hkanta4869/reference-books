@@ -99,6 +99,15 @@ book_kinds.addEventListener('change',(e)=>{
       }
     })
   }
+  if(selectkinds === "3"){
+    parts.forEach((part) =>{
+      if(part.dataset.kinds === "dokkai"){
+        part.classList.remove("hidden")
+      }else{
+        part.classList.add("hidden")
+      }
+    })
+  }
   if(selectkinds === "4"){
      parts.forEach((part) =>{
       if(part.dataset.kinds === "long-sentence"){
@@ -198,8 +207,14 @@ const selectedLevels = levels[select3];
       }
     })
     hamreset();
+    andsortreset();
   })
 
+ function andsortreset (){
+  andsort1.value = "";
+  andsort2.value = "";
+  andsort3.value = "";
+ }
 
 //各reference-partを配列に格納
 const partLists = Array.from(parts)
