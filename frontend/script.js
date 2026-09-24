@@ -207,6 +207,7 @@ const selectedLevels = levels[select3];
       }
     })
     hamreset();
+    andsortreset();
   })
 
 //絞り込み検索リセット
